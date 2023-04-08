@@ -1,9 +1,9 @@
 <?php 
-    define('PG_DB', "CAM_HOANG_1"); //cần thay
-    define('PG_HOST', "localhost"); //cần thay
-    define('PG_USER', "postgres"); //cần thay
-    define('PG_PORT', "5432"); // cần thay
-    define('PG_PASS', "postgres"); // cần thay
+    define('PG_DB', "DATABASE_NAME"); //cần thay
+    define('PG_HOST', "HOST"); //cần thay
+    define('PG_USER', "USERNAME"); //cần thay
+    define('PG_PORT', "PORT"); // cần thay
+    define('PG_PASS', "PASSWORD"); // cần thay
 
     #extension = pgsql
     #bat config trong apache php.ini
