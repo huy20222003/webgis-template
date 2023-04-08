@@ -29,17 +29,17 @@ closer.onclick = function () {
 };
 
 var format = 'image/png';
-var bounds = [564182.125, 2317466.0, 564514.4375, 2318014.0]; //cần thay
+var bounds = [0, 0, 0, 0]; //cần thay
 
 var vung = new ol.layer.Image({
     source: new ol.source.ImageWMS({
         ratio: 1,
-        url: 'http://localhost:8888/geoserver/cam_hoang/wms', //cần thay
+        url: 'http://localhost:PORT/geoserver/DATABASE_NAME/wms', //cần thay
         params: {
             'FORMAT': format,
             'VERSION': '1.1.0',
             STYLES: '',
-            LAYERS: 'cam_hoang:camhoangdc_1', //cần thay
+            LAYERS: 'YOURLAYER', //cần thay
         }
     })
 });
@@ -47,12 +47,12 @@ var vung = new ol.layer.Image({
 var duong = new ol.layer.Image({
     source: new ol.source.ImageWMS({
         ratio: 1,
-        url: 'http://localhost:8888/geoserver/cam_hoang/wms', //cần thay
+        url: 'http://localhost:PORT/geoserver/DATABASE_NAME/wms', //cần thay
         params: {
             'FORMAT': format,
             'VERSION': '1.1.0',
             STYLES: '',
-            LAYERS: 'cam_hoang:camhoanggt_1', //cần thay
+            LAYERS: YOURLAYER', //cần thay
         }
     })
 });
@@ -60,12 +60,12 @@ var duong = new ol.layer.Image({
 var diem = new ol.layer.Image({
     source: new ol.source.ImageWMS({
         ratio: 1,
-        url: 'http://localhost:8888/geoserver/cam_hoang/wms', //cần thay
+        url: 'http://localhost:PORT/geoserver/DATABASE_NAME/wms', //cần thay
         params: {
         'FORMAT': format,
         'VERSION': '1.1.0',
         STYLES: '',
-        LAYERS: 'cam_hoang:camhoangtt_1', //cần thay
+        LAYERS: YOURLAYER', //cần thay
         }
     })
 });
